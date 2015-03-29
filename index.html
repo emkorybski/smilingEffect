@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Smiling effect - test</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200">
+
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #demo {
+            padding: 0;
+            margin-top: -17px;
+        }
+        #demo p {
+            background: #000;
+            padding: 12px;
+            color: #fff
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="demo"> <!-- You need this skin class -->
+        <p>Smiling Effect</p>
+    </div>
+    <script>
+        function jsonFlickrApi(rsp) {
+            window.rsp = rsp;
+            var s = "";
+
+            //s = "total number is: " + rsp.photos.photo.length + "<br/>";
+
+            for (var i=0; i < rsp.photos.photo.length; i++) {
+                photo = rsp.photos.photo[i];
+                t_url = "http://farm" + photo.farm + ".static.flickr.com/" +
+                        photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
+                p_url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
+                s +=  '<a href="' + p_url + '">' + '<img alt="'+ photo.title +
+                        '"src="' + t_url + '"/>' + '</a>';
+            }
+            document.writeln(s);
+        }
+    </script>
+    <script src="http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a090b6910c885283973ca1d9e4824795&tags=smile!&per_page=150&format=json&content_type=1"></script>
+
+    <!--
+    <script>
+        // Create a new YUI instance and populate it with the required modules.
+        YUI().use('io', function (Y) {
+            // IO Utility is available and ready for use. Add implementation
+            // code here.
+
+            var inputNode  = Y.one('#ac-input'),
+                    photosNode = Y.one('#photos');
+
+            var uri = "get.php?foo=bar";
+
+            // Define a function to handle the response data.
+            function complete(id, o, args) {
+                var id = id; // Transaction ID.
+                var data = o.responseText; // Response data.
+                var args = args[1]; // 'ipsum'.
+            };
+
+            // Subscribe to event "io:complete", and pass an array
+            // as an argument to the event handler "complete", since
+            // "complete" is global.   At this point in the transaction
+            // lifecycle, success or failure is not yet known.
+            Y.on('io:complete', complete, Y, ['lorem', 'ipsum']);
+
+            // Make an HTTP request to 'get.php'.
+            // NOTE: This transaction does not use a configuration object.
+            var request = Y.io(uri);
+
+        });
+
+    </script>
+    -->
+</body>
+
+</html>
