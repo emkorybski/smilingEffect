@@ -1,2 +1,2 @@
-# smilingEffect
-Keep smiling!
+# SmilingEffect
+Share your Happiness
