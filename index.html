@@ -1,88 +1,182 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Smiling effect - test</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200">
+	<head>
+		<title>Take a Smile | SmilingEffect</title>
+		<meta name="description" content="Don't be shy, come on Take a Smile! It is free and we only want to make you happy."> 
+		<meta name="keywords" content="SmilingEffect 'coming soon' Campaign 'take a smile' free positive smile smiley smiling 'smiling effect' 'keep smiling' 'smiling face' 'smiling quotes' share 'pursuit of happiness' happiness laugh LOL happy 'be happy' enjoy people photo picture">
+		<meta http-equiv="content_language" content="en" />    
+		<meta name="author" content="Tao-Kao" />	
+		<meta name="owner" content="SmilingEffect">
+		<meta name="copyright" content="www.smilingeffect.com">    
+		<meta content="charset=utf-8" />
+ 
+		<link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
 
-    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+        <code>   
+            <script type="text/javascript">  
+                <!-- javascript function to show the div "flyer-head-quote" and hide the "smiley" div taken -->        
+                function showIt(divToHide){
+                    document.getElementById("flyer-head-quote").style.display = "";
+                    document.getElementById(divToHide).style.display = "none";
+                    
+                }              
+                  
+                <!-- javascript function to randomly hide two "smiley" div -->        
+                function smileyTaken(){
+                    var div1= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div2= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div3= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div4= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div5= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div6= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div7= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    /* var div8= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div9= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1));
+                    var div10= "flyer-bottom-smile-".concat(Math.floor((Math.random()*10)+1)); */
+                    
+                    document.getElementById(div1).style.display = "";
+                    document.getElementById(div2).style.display = "";
+                    document.getElementById(div3).style.display = "";
+                    document.getElementById(div4).style.display = "";
+                    document.getElementById(div5).style.display = "";
+                    document.getElementById(div6).style.display = "";
+                    document.getElementById(div7).style.display = "";
+                    /* document.getElementById(div8).style.display = "";
+                    document.getElementById(div9).style.display = "";
+                    document.getElementById(div10).style.display = ""; */
+                    
+                } 
+    
+            </script>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        #demo {
-            padding: 0;
-            margin-top: -17px;
-        }
-        #demo p {
-            background: #000;
-            padding: 12px;
-            color: #fff
-        }
+        </code>
 
+	</head>
+	
+    <body id="body" onLoad="smileyTaken();">
+        <div id="flyer" class="flyer">     
+            <div id="flyer-head-quote" style="display: none;">
+                <div id="flyer-head-quote-container">
 
-    </style>
-</head>
-<body>
-    <div id="demo"> <!-- You need this skin class -->
-        <p>Smiling Effect</p>
-    </div>
-    <script>
-        function jsonFlickrApi(rsp) {
-            window.rsp = rsp;
-            var s = "";
+                    <h1>Thank you Folk</h1>
 
-            //s = "total number is: " + rsp.photos.photo.length + "<br/>";
+                    A new version of SmilingEffect is Cooming Soon<br>
 
-            for (var i=0; i < rsp.photos.photo.length; i++) {
-                photo = rsp.photos.photo[i];
-                t_url = "http://farm" + photo.farm + ".static.flickr.com/" +
-                        photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
-                p_url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
-                s +=  '<a href="' + p_url + '">' + '<img alt="'+ photo.title +
-                        '"src="' + t_url + '"/>' + '</a>';
-            }
-            document.writeln(s);
-        }
-    </script>
-    <script src="https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a090b6910c885283973ca1d9e4824795&tags=beautiful,smile&per_page=150&format=json&content_type=1"></script>
+                    <h1>Meanwhile.. Stay tuned</h1>
 
-    <!--
-    <script>
-        // Create a new YUI instance and populate it with the required modules.
-        YUI().use('io', function (Y) {
-            // IO Utility is available and ready for use. Add implementation
-            // code here.
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+                    <div id="mc_embed_signup">
+                    <form action="//smilingeffect.us6.list-manage.com/subscribe/post?u=aa86e24fbc&amp;id=0c1d002546" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        Subscribe to our mailing list<br><br>
+                        <input type="email" style="width:97%;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -3000px;"><input type="text" name="b_aa86e24fbc_0c1d002546" tabindex="-1" value=""></div>
+                        <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                    </div>
 
-            var inputNode  = Y.one('#ac-input'),
-                    photosNode = Y.one('#photos');
+                    <!--End mc_embed_signup-->
 
-            var uri = "get.php?foo=bar";
+                </div>
 
-            // Define a function to handle the response data.
-            function complete(id, o, args) {
-                var id = id; // Transaction ID.
-                var data = o.responseText; // Response data.
-                var args = args[1]; // 'ipsum'.
-            };
+            </div>
 
-            // Subscribe to event "io:complete", and pass an array
-            // as an argument to the event handler "complete", since
-            // "complete" is global.   At this point in the transaction
-            // lifecycle, success or failure is not yet known.
-            Y.on('io:complete', complete, Y, ['lorem', 'ipsum']);
+            <div id="flyer-head">  
+                <img class="flyer-head-img" title="Don't be shy, come on Take a Smile!" alt="shape-flyer-head" class="shape-flyer-head" src="assets/images/background-flyer.jpg" >
+                
+            </div>  
 
-            // Make an HTTP request to 'get.php'.
-            // NOTE: This transaction does not use a configuration object.
-            var request = Y.io(uri);
+            <div id="flyer-bottom">
+                <div id="flyer-bottom-smile-1" class="flyer-bottom-smile">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-1');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-1.png" onMouseOver="this.src='assets/images/shape-smile-1_on.png'" onMouseOut="this.src='assets/images/shape-smile-1.png'">
+                
+                    </a>
+                    
+                </div>             
+                 
+                <div id="flyer-bottom-smile-2" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-2');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-2.png" onMouseOver="this.src='assets/images/shape-smile-2_on.png'" onMouseOut="this.src='css/images/shape-smile-2.png'">
+                
+                    </a>                    
+                
+                </div>  
+                
+                <div id="flyer-bottom-smile-3" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-3');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="assets/images/shape-smile-3.png" onMouseOver="this.src='assets/images/shape-smile-3_on.png'" onMouseOut="this.src='assets/images/shape-smile-3.png'">
+                
+                    </a>                    
+                
+                </div>                      
+                
+                <div id="flyer-bottom-smile-4" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-4');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-4.png" onMouseOver="this.src='assets/images/shape-smile-4_on.png'" onMouseOut="this.src='assets/images/shape-smile-4.png'">
+                
+                    </a>                    
+                
+                </div>                      
+                
+                <div id="flyer-bottom-smile-5" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-5');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-5.png" onMouseOver="this.src='assets/images/shape-smile-5_on.png'" onMouseOut="this.src=assets/images/shape-smile-5.png'">
+                
+                    </a>                    
+                
+                </div>                      
+                
+                <div id="flyer-bottom-smile-6" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-6');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-6.png" onMouseOver="this.src='assets/images/shape-smile-6_on.png'" onMouseOut="this.src='assets/images/shape-smile-6.png'">
+                
+                    </a>                    
+                
+                </div>                      
+                
+                <div id="flyer-bottom-smile-7" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-7');">
+                        <img title="happy? take it" alt="shape-flyer-smile" id="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-7.png" onMouseOver="this.src=assets/images/shape-smile-7_on.png'" onMouseOut="this.src=assets/images/shape-smile-7.png'">
+                
+                    </a>                    
+                
+                </div>               
+                
+                <!--div id="flyer-bottom-smile-8" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-8');">
+                        <img title="happy? take it" alt="shape-flyer-smile" class="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-8.png" onMouseOver="this.src='campaign-take_a_smile/images/shape-smile-8_on.png'" onMouseOut="this.src='campaign-take_a_smile/images/shape-smile-8.png'">
+                
+                    </a>                    
+                
+                </div>               
+                
+                <div id="flyer-bottom-smile-9" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-9');">
+                        <img title="happy? take it" alt="shape-flyer-smile" class="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-9.png" onMouseOver="this.src='campaign-take_a_smile/images/shape-smile-9_on.png'" onMouseOut="this.src='campaign-take_a_smile/images/shape-smile-9.png'">
+                
+                    </a>                    
+                
+                </div>           
+                
+                <div id="flyer-bottom-smile-10" class="flyer-bottom-smile" style="display: none;">
+                    <a href="#" onClick="showIt('flyer-bottom-smile-10');">
+                        <img title="happy? take it" alt="shape-flyer-smile" class="shape-flyer-smile" src="campaign-take_a_smile/images/shape-smile-10.png" onMouseOver="this.src='campaign-take_a_smile/images/shape-smile-10_on.png'" onMouseOut="this.src='campaign-take_a_smile/images/shape-smile-10.png'">
+                
+                    </a>                    
+                
+                </div-->
+                
+            </div>  
 
-        });
-
-    </script>
-    -->
-</body>
-
+        </div>
+	
+    </body>
+    
 </html>
+
+
+

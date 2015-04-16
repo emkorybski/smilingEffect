@@ -1,0 +1,116 @@
+body{
+	background-color: #21CFFB;
+    height: 100%; width: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family: Museo Sans,Strima,MB Vinatage,General,Merel,Transat,Tahoma,Verdena;
+    color: #333333;
+    text-align: center;
+    font-size: 24px;
+
+}
+h1{
+    color: #FFE513;
+    text-align: center;
+    font-size: 30px;
+
+}
+h2{
+    color: #333333;
+    text-align: center;
+    font-size: 26px;
+
+}
+
+#flyer{
+
+}
+
+#flyer-head{
+    /* background-image: url("../images/background-flyer.jpg"); */
+    width: 80%;
+    /* width: 941px; */
+    position: relative;
+    z-index: 5;
+    margin: 0px auto; margin-top: 3%;
+
+}
+.flyer-head-img{
+    max-width: 100%; height: auto;
+
+}
+
+#flyer-bottom{
+    padding-left: 18.2%; 
+    /* width: 63.5%; */
+    z-index: 5;
+    margin: 0px auto; margin-top: -35px;
+
+}
+
+#flyer-bottom-smile{
+
+}
+
+#shape-flyer-smile{
+    position: relative; float: left;
+    z-index: 10;
+    width: 98px; height: 150px;
+    max-width: 70%; max-height: auto;
+
+}
+
+#flyer-head-quote{
+    background-color: #21CFFB; filter: alpha(opacity=80); /* For IE8 and earlier */
+    height: 100%; width: 100%;
+    margin: 0px 0px 0px 0px;
+    position: absolute; z-index: 15;
+
+}
+
+#flyer-head-quote-container{
+    background-color: #21CFFB; 
+    margin: 0px auto;
+    height: 80%; width: 80%;
+    padding-top: 5%;
+
+}
+
+#mc_embed_signup{
+    width: 310px;
+    position: relative;
+    margin: 0px auto;
+
+}
+
+/***** Mobile *****/
+@media screen and (max-device-width : 320px){
+body{
+    font-size: 48px;
+
+}
+h1{
+    font-size: 58px;
+
+}
+h2{
+    font-size: 62px;
+
+}
+
+#shape-flyer-smile{
+    max-width: 70%; max-height: auto;
+
+}
+
+#mc_embed_signup{
+    width: 75%;
+    font-size: 48px;
+
+}
+
+}
+
+
+
+
+
