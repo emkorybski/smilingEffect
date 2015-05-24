@@ -99,13 +99,18 @@
 
                         var s_top = $(window).scrollTop();
                         var number_of_rows = Math.floor(s_top/220);
+                        //alert(number_of_rows);
+                        if(number_of_rows == 0) {
 
-                        for(var cnt = 1; cnt <= number_of_rows; cnt++){
-                            console.log(cnt);
-                            $("div.picrow-wrapper").append('<div class="picrow"></div>').width(lastWidth);
+                                $("div.picrow-wrapper").append('<div class="picrow"></div>').width(lastWidth);
 
+                        } else {
+                            for (var cnt = 1; cnt <= number_of_rows; cnt++) {
+                                console.log(cnt);
+                                $("div.picrow-wrapper").append('<div class="picrow"></div>').width(lastWidth);
+
+                            }
                         }
-
                         processPhotos(photo_array);
                     };
 
@@ -131,12 +136,8 @@
 
                     $(window).scroll(function(){
 
-                        if($(window).scrollTop() >= 220){
-                            scr();
-                        }
-                        if($(window).scrollTop() < 220){
-
-                            $("div.picrow-wrapper").append('<div class="picrow"></div>').width(lastWidth);
+                       if($(window).scrollTop() > 0){
+                           scr();
                         }
 
                     });
