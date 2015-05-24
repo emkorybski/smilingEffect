@@ -206,8 +206,8 @@
                 // Create image, set src, width, height and margin
                 (function() {
                     var img = $('<img/>', {class: "photo", src: photo.url_n, width: wt, height: ht}).css("margin", border + "px");
-                    var url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
-                    img.click(function() { location.href = url; });
+                    //var url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
+                    //img.click(function() { location.href = url; });
                     d_row.append(img);
                 })();
                 i++;
