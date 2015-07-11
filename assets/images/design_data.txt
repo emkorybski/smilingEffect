@@ -1,0 +1,64 @@
+
+____________________
+>>> COLORS
+
+1) YELLOW
+	PANTONE 108c - FFE513 - rgb(255 229 19)
+
+2) BACKGROUND LIGHT BLUE
+	PANTONE - 21CFFB - rgb(33 207 251)
+
+3) GREY
+	PANTONE BLACK 80% - 333333
+
+ - rgb(51 51 51)
+
+
+USER ICONS
+
+	FEMALE
+ 	- FF80D1
+
+	MALE
+	- 008DFF
+ 	NONE
+	- FFE513
+
+
+OLD:
+	BACKGROUND LIGHT BLUE
+		PANTONE 297c - 6DD0F7
+	RED: PANTONE 178C - F5866C
+	ORANGE: PANTONE 1505C - F9A351
+	LIGHT BLUE: PANTONE 3125C - 00B5CC
+	GREEN BLUE: PANTONE 3405C - 00B085
+	GREEN: PANTONE 583C - AFBD22
+
+
+____________________
+>>> FONT
+
+Title
+	Museo 500
+	Size: 
+
+Sub-title
+	Museo 300
+	Size: 12px
+
+Sub-title bold
+	Museo Sans 700
+	Size: 
+
+Text Color
+	GREY (3)
+
+
+____________________
+>>> IMAGE SIZE
+
+Profile image
+	DZone: 80x80 / 64x64 / 48x48 / 24x24
+
+Cover image
+	Google+: 940x180 píxeles

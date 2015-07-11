@@ -1,3 +1,5 @@
+/* original CSS */
+/*
 body{
 	background-color: #21CFFB;
     height: 100%; width: 100%;
@@ -8,6 +10,7 @@ body{
     font-size: 24px;
 
 }
+*/
 h1{
     color: #FFE513;
     text-align: center;
@@ -69,7 +72,7 @@ h2{
 
 #flyer-head-quote-container{
     background-color: #21CFFB; 
-    margin: 0px auto;
+    margin: 0 auto;
     height: 80%; width: 80%;
     padding-top: 5%;
 
@@ -80,6 +83,98 @@ h2{
     position: relative;
     margin: 0px auto;
 
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
+body {
+    background-color: #fff;
+}
+header {
+    background: #16cffb;
+    color: #fff;
+    padding: 10px;
+    margin: -10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+header form {
+    float: right;
+    margin-top: -1px
+}
+header form input {
+    padding: 3px;
+}
+div.picrow
+{
+    border: 0px solid #000;
+}
+
+div#picstest
+{
+    visibility : hidden;
+    width:99%;
+}
+
+img.photo { cursor: pointer; }
+
+.picrow:first-child {
+    margin-top: 10px
+}
+.yellow {
+    color: #f3d82a;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-right: 7px;
+    border: 2px solid #f3d82a;
+    padding: 7px;
+    border-radius: 15px
+}
+#nav {
+    float: right;
+    margin-right: 10px;
+    height: 70px;
+    line-height: 87px;
+}
+#type-nav img {
+    margin-top: 7px;
+    margin-left: 7px;
+}
+#pre-l {
+    width: 100%;
+    text-align: center;
+
+}
+
+#type-nav.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+#backtop {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    text-align: center;
+    border-radius: 3px;
+    background: #f3d82a;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    line-height: 30px;
 }
 
 /***** Mobile *****/
@@ -107,6 +202,11 @@ h2{
     font-size: 48px;
 
 }
+
+    #type-nav img:first-child {
+        width: 130px;
+        height: 92px;
+    }
 
 }
 
